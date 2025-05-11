@@ -2,7 +2,7 @@
     {
         "id": 0,
         "name": "FALAFEL",
-        "icon": "images/FALAFEL.jpg",
+        "icon": "../images/FALAFEL.jpg",
         "price": 459
     },
     {
