@@ -22,7 +22,29 @@
     flex-direction: column;
     flex-grow: 1;
   }
+  .card-body{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+}
+.card-body-content{
+    flex-grow: 1;
+}
+  /* Add to cart button styling */
+  .btn-cart {
+      background-color: #27ae60;
+      border-color: #27ae60;
+      color: white;
+      margin-top: auto;
+      align-self: stretch;
+  }
   
+  .btn-cart:hover {
+      background-color: #2ecc71;
+      border-color: #2ecc71;
+      color: white;
+  }
   
 /* Button styling that affects the menu tabs */
 .btn-primary {
@@ -39,20 +61,6 @@
     border-color: #e67e22;
 }
 
-/* Add to cart button styling */
-.btn-cart {
-    background-color: #27ae60;
-    border-color: #27ae60;
-    color: white;
-    margin-top: auto;
-    margin-bottom: 0px;
-}
-
-.btn-cart:hover {
-    background-color: #2ecc71;
-    border-color: #2ecc71;
-    color: white;
-}
 
 /* Background for sections */
 .bg-light {
