@@ -8,31 +8,31 @@
     {
         "id": 1,
         "name": "ITALIAN POTATO WEDGES",
-        "icon": "images/ITALIAN POTATO WEDGES.jpg",
+        "icon": "images/ITALIANPOTATOWEDGES.jpg",
         "price": 410
     },
     {
         "id": 2,
         "name": "VEGAN MINI TORTILLA WRAPS",
-        "icon": "images/VEGAN MINI TORTILLA WRAPS.jpg",
+        "icon": "images/VEGANMINITORTILLAWRAPS.jpg",
         "price": 460
     },
     {
         "id": 3,
         "name": "TOMATO MOZZARELLA BRUSCHETTA",
-        "icon": "images/TOMATO MOZZARELLA BRUSCHETTA.jpg",
+        "icon": "images/TOMATOMOZZARELLABRUSCHETTA.jpg",
         "price": 490
     },
     {
         "id": 4,
         "name": "AGLIO OLIO ASPARAGUS",
-        "icon": "images/AGLIO OLIO ASPARAGUS.jpg",
+        "icon": "images/AGLIOOLIOASPARAGUS.jpg",
         "price": 590
     },
     {
         "id": 5,
         "name": "ROASTED MUSHROOM",
-        "icon": "images/ROASTED MUSHROOM.jpg",
+        "icon": "images/ROASTEDMUSHROOM.jpg",
         "price": 540
     },
     {
@@ -86,49 +86,49 @@
     {
         "id": 14,
         "name": "PESTO PIZZA",
-        "icon": "images/PESTO PIZZA.jpg",
+        "icon": "images/PESTOPIZZA.jpg",
         "price": 460
     },
     {
         "id": 15,
         "name": "PIZZA NAPOLI",
-        "icon": "images/PIZZA NAPOLI.jpg",
+        "icon": "images/PIZZANAPOLI.jpg",
         "price": 490
     },
     {
         "id": 16,
         "name": "PIZZA TARTUFFI",
-        "icon": "images/PIZZA TARTUFFI.jpg",
+        "icon": "images/PIZZATARTUFFI.jpg",
         "price": 590
     },
     {
         "id": 17,
         "name": "BBQ PIZZA",
-        "icon": "images/BBQ PIZZA.jpg",
+        "icon": "images/BBQPIZZA.jpg",
         "price": 540
     },
     {
         "id": 18,
         "name": "SIZZLING CHOCOLATE WALNUT BROWNIE",
-        "icon": "images/SIZZLING CHOCOLATE WALNUT BROWNIE.jpg",
+        "icon": "images/SIZZLINGCHOCOLATEWALNUTBROWNIE.jpg",
         "price": 459
     },
     {
         "id": 19,
         "name": "CHOCOLATE MOUSSE CAKE",
-        "icon": "images/CHOCOLATE MOUSSE CAKE.jpg",
+        "icon": "images/CHOCOLATEMOUSSECAKE.jpg",
         "price": 410
     },
     {
         "id": 20,
         "name": "CHOCOLATE BOMB",
-        "icon": "images/CHOCOLATE BOMB.jpg",
+        "icon": "images/CHOCOLATEBOMB.jpg",
         "price": 460
     },
     {
         "id": 21,
         "name": "ZIP ZIP",
-        "icon": "images/ZIP ZIP.jpg",
+        "icon": "images/ZIPZIP.jpg",
         "price": 490
     },
     {
@@ -140,19 +140,19 @@
     {
         "id": 23,
         "name": "SILK STOCKING",
-        "icon": "images/SILK STOCKING.jpg",
+        "icon": "images/SILKSTOCKING.jpg",
         "price": 540
     },
     {
         "id": 24,
         "name": "PINK DWARF",
-        "icon": "images/PINK DWARF.jpg",
+        "icon": "images/PINKDWARF.jpg",
         "price": 459
     },
     {
         "id": 25,
         "name": "ORIENT EXPRESS",
-        "icon": "images/ORIENT EXPRESS.jpg",
+        "icon": "images/ORIENTEXPRESS.jpg",
         "price": 410
     },
     {
