@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor - Fine Dining Experience</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Make sure to include Bootstrap JS for carousel functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Toaster & Oven Logo" height="70">
+            </a>
+            <a class="navbar-brand" href="#">Toaster & Oven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="home" class="hero-section text-center">
+    <!-- Permanent text overlay - positioned above carousel with all text elements -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="z-index: 10;">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4 text-white" style="text-shadow: 0px 0px 0px rgba(0,0,0,0.8);">Savor the Moment</h1>
+            <p class="lead mb-5 text-white" style="text-shadow: 0px 0px 0px rgba(0,0,0,0.8);">Experience fine dining with our carefully crafted menu of seasonal specialties</p>
+        </div>
+    </div>
+    
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/c6.jpg" class="d-block w-100" alt="Restaurant atmosphere">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/res1.jpg" class="d-block w-100" alt="Signature dish">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/c5.jpg" class="d-block w-100" alt="Restaurant interior">
+            </div>
+        </div>
+        
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+    
+    <!-- Semi-transparent background overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5); z-index: 5;"></div>
+</section>
+        
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="../images/dara's.jpg" alt="Restaurant interior" class="img-fluid rounded shadow"width="600" height="400">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Our Story</h2>
+                    <p class="lead">Established in 2025, Savor has been serving exceptional cuisine in a warm, inviting
+                        atmosphere.</p>
+                    <p>Our chef brings over 20 years of culinary expertise, crafting dishes that blend traditional
+                        techniques with modern innovation. We source the finest ingredients from local farmers and
+                        producers, ensuring freshness and supporting our community.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <i class="bi bi-award fs-1 text-primary"></i>
+                            <h5 class="mt-2">Award Winning</h5>
+                        </div>
+                        <div class="me-4">
+                            <i class="bi bi-hand-thumbs-up fs-1 text-primary"></i>
+                            <h5 class="mt-2">Quality Food</h5>
+                        </div>
+                        <div>
+                            <i class="bi bi-people fs-1 text-primary"></i>
+                            <h5 class="mt-2">Expert Chefs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Gallery</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/gallery1.jpg" alt="Restaurant food" class="img-fluid rounded shadow-sm" width="600" height="600">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/dara's2.jpg" alt="Restaurant interior" class="img-fluid rounded shadow-sm" width="600" height="400">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/gallery2.jpg" alt="Restaurant food" class="img-fluid rounded shadow-sm" width="600" height="600">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/dara's3.jpg" alt="Restaurant interior" class="img-fluid rounded shadow-sm" width="600" height="400">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/gallery3.jpg" alt="Restaurant food" class="img-fluid rounded shadow-sm" width="600" height="600">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="../images/dara's4.jpg" alt="Restaurant interior" class="img-fluid rounded shadow-sm" width="600" height="400">
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">What Our Guests Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"The atmosphere is elegant yet comfortable, and the food is simply
+                                outstanding. I particularly enjoyed the Filet Mignon which was cooked to perfection."
+                            </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div>
+                                    <h6 class="mb-0">Abhi</h6>
+                                    <small class="text-muted">SOCIAL MEDIA INFLUENCER</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Savor exceeded all my expectations. The service was impeccable, and
+                                the Mushroom Risotto was the best I've ever had. Will definitely be coming back!"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div>
+                                    <h6 class="mb-0">Mohit</h6>
+                                    <small class="text-muted">Food Blogger</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"We celebrated our anniversary at Savor and had a wonderful experience.
+                                The cocktails were creative, and the desserts were a perfect end to an exceptional
+                                meal."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div>
+                                    <h6 class="mb-0">David & Sarah Singh</h6>
+                                    <small class="text-muted">Regular Guests</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Contact Us</h2>
+                    <p class="lead mb-4">We'd love to hear from you. Feel free to get in touch with any questions,
+                        feedback, or inquiries.</p>
+
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-geo-alt fs-4 text-primary me-3"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p>OLD CITY,BEHIND JAGDISH MANDIR,UDAIPUR</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-clock fs-4 text-primary me-3"></i>
+                        <div>
+                            <h5>Hours</h5>
+                            <p>Monday - Friday: 5:00 PM - 10:00 PM<br>
+                                Saturday - Sunday: 4:00 PM - 11:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-telephone fs-4 text-primary me-3"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>99xxxxx22</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <i class="bi bi-envelope fs-4 text-primary me-3"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p>vedpiyush587@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#" class="me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="fs-4"><i class="bi bi-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Toaster & Oven</h5>
+                    <p>Elevating dining experiences since 2010</p>
+                    <p>&copy; 2025 Toaster & Oven. All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none text-white">About</a></li>
+                        <li><a href="menu.php" class="text-decoration-none text-white">Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

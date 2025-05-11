@@ -1,0 +1,581 @@
+<!-- Little Italy Udaipur Restaurant -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Bootstrap JS for tab functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Toaster & Oven Logo" height="70">
+            </a>
+            <a class="navbar-brand" href="#">Toaster & Oven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Cart Badge -->
+    <a href="cart.html">
+
+        <div id="cart-badge" class="btn btn-primary position-relative">
+            <i class="bi bi-cart"></i>
+            <span id="cart-badge-icon" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                
+                <span class="visually-hidden">items in cart</span>
+            </span>
+        </div>
+    </a>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">À LA CARTE</h2>
+
+            <!-- Menu Tabs -->
+            <ul class="nav nav-pills mb-5 justify-content-center" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="Appetizers-tab" data-bs-toggle="pill"
+                        data-bs-target="#Appetizers" type="button" role="tab" aria-selected="true">Appetizers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pasta-tab" data-bs-toggle="pill" data-bs-target="#pasta" type="button"
+                        role="tab" aria-selected="true">Pasta</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pizza-tab" data-bs-toggle="pill" data-bs-target="#pizza" type="button"
+                        role="tab" aria-selected="true">Pizza</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts"
+                        type="button" role="tab" aria-selected="false">Desserts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks"
+                        type="button" role="tab" aria-selected="false">Drinks</button>
+                </li>
+            </ul>
+
+            <!-- Menu Content -->
+            <div class="tab-content" id="menuTabsContent">
+                <!-- appetizers -->
+                <div class="tab-pane fade show active" id="Appetizers" role="tabpanel" aria-labelledby="Appetizers-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/FALAFEL.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="falafel" >FALAFEL</h5>
+                                        <span class="fw-bold text-primary">₹459</span>
+                                    </div>
+                                    <p class="card-text">Chickpea fritters with vegan aioli.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(0)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 overflow-hidden shadow-sm">
+                                <img src="../images/ITALIAN POTATO WEDGES.jpg" class="card-img-top h-50" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="ITALIAN POTATO WEDGES">ITALIAN POTATO WEDGES</h5>
+                                        <span class="fw-bold text-primary">₹410</span>
+                                    </div>
+                                    <p class="card-text">Potato wedges roasted with italian herbs, vegan aioli.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(1)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/VEGAN MINI TORTILLA WRAPS.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="VEGAN MINI TORTILLA WRAPS">VEGAN MINI TORTILLA WRAPS</h5>
+                                        <span class="fw-bold text-primary">₹460</span>
+                                    </div>
+                                    <p class="card-text">Mini tortilla wrap with crunchy veggies slaw.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(2)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/TOMATO MOZZARELLA BRUSCHETTA.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="TOMATO MOZZARELLA BRUSCHETTA">TOMATO MOZZARELLA BRUSCHETTA </h5>
+                                        <span class="fw-bold text-primary">₹490</span>
+                                    </div>
+                                    <p class="card-text">Toasted bread, garlic oil, diced fresh tomato, diced vegan soft
+                                        mozzarella, oregano, seasoning, basil, olive oil.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(3)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/AGLIO OLIO ASPARAGUS.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Crispy Calamari">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="AGLIO OLIO ASPARAGUS">AGLIO OLIO ASPARAGUS</h5>
+                                        <span class="fw-bold text-primary">₹590</span>
+                                    </div>
+                                    <p class="card-text">Asparagus tossed with chilly, roasted garlic in olive oil.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(4)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/ROASTED MUSHROOM.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Wild Mushroom Bruschetta">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="ROASTED MUSHROOM">ROASTED MUSHROOM</h5>
+                                        <span class="fw-bold text-primary">₹540</span>
+                                    </div>
+                                    <p class="card-text">Lemon garlic roasted mushroom.</p>
+                                    <button class="btn btn-cart w-100 mt-3"
+                                        onclick="addToCart(5)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pasta -->
+                <div class="tab-pane fade show" id="pasta" role="tabpanel" aria-labelledby="pasta-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/ARRABBIATA.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="ARRABBIATA">ARRABBIATA</h5>
+                                        <span class="fw-bold text-primary">₹295</span>
+                                    </div>
+                                    <p class="card-text">Tomatoes, garlic, peperoncino, parsley, extra virgin olive oil.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(6)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/ALFREDO.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="ALFREDO">ALFREDO</h5>
+                                        <span class="fw-bold text-primary">₹310</span>
+                                    </div>
+                                    <p class="card-text">Fettucini, mozzarella, parmesan, parsley. </p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(7)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/PESTO.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="PESTO">PESTO</h5>
+                                        <span class="fw-bold text-primary">₹310</span>
+                                    </div>
+                                    <p class="card-text">Fresh basil, garlic, pine nuts, extra virgin olive oil, and Parmesan cheese.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(8)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/LASAGNE.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="LASAGNE">LASAGNE </h5>
+                                        <span class="fw-bold text-primary">₹280</span>
+                                    </div>
+                                    <p class="card-text">Ricotta, mozzarella, parmesan, zucchini, mushroom.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(9)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/RISOTTO.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Crispy Calamari">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="RISOTTO">RISOTTO</h5>
+                                        <span class="fw-bold text-primary">₹350</span>
+                                    </div>
+                                    <p class="card-text">Arborio rice, broth, onion, white wine, parmesan.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(10)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/RAVIOLI.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Wild Mushroom Bruschetta">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="RAVIOLI">RAVIOLI</h5>
+                                        <span class="fw-bold text-primary">₹260</span>
+                                    </div>
+                                    <p class="card-text">Ricotta cheese, spinach, mushrooms, roasted garlic, and parmesan cheese.</p>
+                                    <button class="btn btn-cart w-100 mt-3"
+                                        onclick="addToCart(11)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza -->
+                <div class="tab-pane fade show" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/TABASCO.jpeg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="TABASCO">TABASCO</h5>
+                                        <span class="fw-bold text-primary">₹590</span>
+                                    </div>
+                                    <p class="card-text">Spicy tomato sauce, jalapeno pepper, sun-dried tomatoes,
+                                        tabasco and mozzarella.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(12)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/SICILIA.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="SICILIA">SICILIA</h5>
+                                        <span class="fw-bold text-primary">₹660</span>
+                                    </div>
+                                    <p class="card-text">A thick based pizza with fresh tomato sauce, mushrooms, garlic,
+                                        pickle onion, sun-dried tomato, chilly oil, fresh basil and mozzarella.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(13)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/PESTO PIZZA.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="PESTO PIZZA">PESTO PIZZA</h5>
+                                        <span class="fw-bold text-primary">₹610</span>
+                                    </div>
+                                    <p class="card-text">Pesto sauce, potatoes, garlic and mozzarella.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(14)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/PIZZA NAPOLI.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Caprese Salad">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="PIZZA NAPOLI">PIZZA NAPOLI</h5>
+                                        <span class="fw-bold text-primary">₹660</span>
+                                    </div>
+                                    <p class="card-text">Fresh tomato sauce, onion, capsicum, sun-dried tomatoes,
+                                        jalapeno
+                                        pepper, chilli oil, mozzarella.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(15)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/PIZZA TARTUFFI.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Crispy Calamari">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="PIZZA TARTUFFI">PIZZA TARTUFFI</h5>
+                                        <span class="fw-bold text-primary">₹690</span>
+                                    </div>
+                                    <p class="card-text">Classic thin-crust pizza with marinated mushroom balsamic
+                                        garlic, goat cheese, arugula leaves and truffle oil.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(16)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/BBQ PIZZA.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Wild Mushroom Bruschetta">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="BBQ PIZZA">BBQ PIZZA</h5>
+                                        <span class="fw-bold text-primary">₹690</span>
+                                    </div>
+                                    <p class="card-text">Classic thin-crust pizza with arrabbiata sauce, sauteed
+                                        potatoes, capsicum, carrot, zucchini with mozzarella and parmesan cheese.</p>
+                                    <button class="btn btn-cart w-100 mt-3"
+                                        onclick="addToCart(17)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/SIZZLING CHOCOLATE WALNUT BROWNIE.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Chocolate Lava Cake">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="SIZZLING CHOCOLATE WALNUT BROWNIE">SIZZLING CHOCOLATE WALNUT BROWNIE</h5>
+                                        <span class="fw-bold text-primary">₹305</span>
+                                    </div>
+                                    <p class="card-text">Served with vanilla ice-cream.</p>
+                                    <button class="btn btn-cart w-100 mt-3"
+                                        onclick="addToCart(18)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/CHOCOLATE MOUSSE CAKE.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Crème Brûlée">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="CHOCOLATE MOUSSE CAKE">CHOCOLATE MOUSSE CAKE</h5>
+                                        <span class="fw-bold text-primary">₹255</span>
+                                    </div>
+                                    <p class="card-text">Rich mousse cake with dark and milk chocolate.
+                                    </p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(19)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/CHOCOLATE BOMB.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Berry Cheesecake">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="CHOCOLATE BOMB">CHOCOLATE BOMB</h5>
+                                        <span class="fw-bold text-primary">₹320</span>
+                                    </div>
+                                    <p class="card-text">Baked chocolate cake filled with gooey chocolate served with
+                                        vanilla ice-cream.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(20)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/ZIP ZIP.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0" id="ZIP ZIP">ZIP ZIP</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Watermelon and litchi.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(21)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/CONCLAVE.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="CONCLAVE">CONCLAVE</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Kiwi and litchi.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(22)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/SILK STOCKING.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="SILK STOCKING">SILK STOCKING</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Fresh oranges with vanilla ice-cream.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(23)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/PINK DWARF.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="PINK DWARF">PINK DWARF</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Strwaberry and kiwi.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(24)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/ORIENT EXPRESS.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="ORIENT EXPRESS">ORIENT EXPRESS</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Strwaberry, orange and pineapple.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(25)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card menu-item h-100 shadow-sm">
+                                <img src="../images/CHILLER.jpg" class="card-img-top" style="object-fit: cover;
+                                    height: 250px !important;" alt="Signature Cocktail">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="card-title mb-0"id="CHILLER">CHILLER</h5>
+                                        <span class="fw-bold text-primary">₹240</span>
+                                    </div>
+                                    <p class="card-text">Mint, green grapes and lemon.</p>
+                                    <button class="btn btn-cart w-100 mt-3" onclick="addToCart(26)">
+                                        <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

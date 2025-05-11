@@ -1,0 +1,164 @@
+[
+    {
+        "id": 0,
+        "name": "FALAFEL",
+        "icon": "../images/FALAFEL.jpg",
+        "price": 459
+    },
+    {
+        "id": 1,
+        "name": "ITALIAN POTATO WEDGES",
+        "icon": "../images/ITALIAN POTATO WEDGES.jpg",
+        "price": 410
+    },
+    {
+        "id": 2,
+        "name": "VEGAN MINI TORTILLA WRAPS",
+        "icon": "../images/VEGAN MINI TORTILLA WRAPS.jpg",
+        "price": 460
+    },
+    {
+        "id": 3,
+        "name": "TOMATO MOZZARELLA BRUSCHETTA",
+        "icon": "../images/TOMATO MOZZARELLA BRUSCHETTA.jpg",
+        "price": 490
+    },
+    {
+        "id": 4,
+        "name": "AGLIO OLIO ASPARAGUS",
+        "icon": "../images/AGLIO OLIO ASPARAGUS.jpg",
+        "price": 590
+    },
+    {
+        "id": 5,
+        "name": "ROASTED MUSHROOM",
+        "icon": "../images/ROASTED MUSHROOM.jpg",
+        "price": 540
+    },
+    {
+        "id": 6,
+        "name": "ARRABBIATA",
+        "icon": "../images/ARRABBIATA.jpg",
+        "price": 459
+    },
+    {
+        "id": 7,
+        "name": "ALFREDO",
+        "icon": "../images/ALFREDO.jpg",
+        "price": 410
+    },
+    {
+        "id": 8,
+        "name": "PESTO",
+        "icon": "../images/PESTO.jpg",
+        "price": 460
+    },
+    {
+        "id": 9,
+        "name": "LASAGNE",
+        "icon": "../images/LASAGNE.jpg",
+        "price": 490
+    },
+    {
+        "id": 10,
+        "name": "RISOTTO",
+        "icon": "../images/RISOTTO.jpg",
+        "price": 590
+    },
+    {
+        "id": 11,
+        "name": "RAVIOLI",
+        "icon": "../images/RAVIOLI.jpg",
+        "price": 540
+    },
+    {
+        "id": 12,
+        "name": "TABASCO",
+        "icon": "../images/TABASCO.jpg",
+        "price": 459
+    },
+    {
+        "id": 13,
+        "name": "SICILIA",
+        "icon": "../images/SICILIA.jpg",
+        "price": 410
+    },
+    {
+        "id": 14,
+        "name": "PESTO PIZZA",
+        "icon": "../images/PESTO PIZZA.jpg",
+        "price": 460
+    },
+    {
+        "id": 15,
+        "name": "PIZZA NAPOLI",
+        "icon": "../images/PIZZA NAPOLI.jpg",
+        "price": 490
+    },
+    {
+        "id": 16,
+        "name": "PIZZA TARTUFFI",
+        "icon": "../images/PIZZA TARTUFFI.jpg",
+        "price": 590
+    },
+    {
+        "id": 17,
+        "name": "BBQ PIZZA",
+        "icon": "../images/BBQ PIZZA.jpg",
+        "price": 540
+    },
+    {
+        "id": 18,
+        "name": "SIZZLING CHOCOLATE WALNUT BROWNIE",
+        "icon": "../images/SIZZLING CHOCOLATE WALNUT BROWNIE.jpg",
+        "price": 459
+    },
+    {
+        "id": 19,
+        "name": "CHOCOLATE MOUSSE CAKE",
+        "icon": "../images/CHOCOLATE MOUSSE CAKE.jpg",
+        "price": 410
+    },
+    {
+        "id": 20,
+        "name": "CHOCOLATE BOMB",
+        "icon": "../images/CHOCOLATE BOMB.jpg",
+        "price": 460
+    },
+    {
+        "id": 21,
+        "name": "ZIP ZIP",
+        "icon": "../images/ZIP ZIP.jpg",
+        "price": 490
+    },
+    {
+        "id": 22,
+        "name": "CONCLAVE",
+        "icon": "../images/CONCLAVE.jpg",
+        "price": 590
+    },
+    {
+        "id": 23,
+        "name": "SILK STOCKING",
+        "icon": "../images/SILK STOCKING.jpg",
+        "price": 540
+    },
+    {
+        "id": 24,
+        "name": "PINK DWARF",
+        "icon": "../images/PINK DWARF.jpg",
+        "price": 459
+    },
+    {
+        "id": 25,
+        "name": "ORIENT EXPRESS",
+        "icon": "../images/ORIENT EXPRESS.jpg",
+        "price": 410
+    },
+    {
+        "id": 26,
+        "name": "CHILLER",
+        "icon": "../images/CHILLER.jpg",
+        "price": 460
+    }
+]
