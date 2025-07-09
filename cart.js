@@ -112,6 +112,7 @@ function updateCartDisplay() {
             // console.log(id)
         });
     });
+    
 
     increaseButtons.forEach(btn => {
         btn.addEventListener("click", function () {
